@@ -1,0 +1,16 @@
+# Python / environment
+.venv/
+__pycache__/
+*.pyc
+
+# Large data - not committed (see README for download instructions)
+data/
+captures/*.npz
+
+# Scratch and superseded outputs
+_test/
+_preview_test.png
+results_v1/
+
+# Report drafts
+*.docx

@@ -1,0 +1,36 @@
+{
+ "capture": "captures\\floor.npz",
+ "meta": {
+  "fs": 20000000.0,
+  "freq": 2437000000.0,
+  "gain": 40.0,
+  "buffer": 1048576,
+  "uri": "usb:1.1.5",
+  "time": "2026-10-07 20:27:26",
+  "note": "antenna off"
+ },
+ "floor_method": "auto (quietest 10% of windows)",
+ "floor_power": 6.511678879322399,
+ "windows": 58368,
+ "threshold": 0.6,
+ "counts": {
+  "noise": 34449,
+  "wifi_ofdm": 640,
+  "wifi_dsss": 0,
+  "bluetooth": 452,
+  "jam_tone": 1585,
+  "jam_barrage": 713,
+  "jam_sweep": 0,
+  "jam_pulsed": 1740,
+  "wifi_congestion": 29,
+  "uncertain": 18760
+ },
+ "groups": {
+  "clean": 34449,
+  "wifi": 640,
+  "bluetooth": 452,
+  "jamming": 4038,
+  "interference": 29,
+  "uncertain": 18760
+ }
+}

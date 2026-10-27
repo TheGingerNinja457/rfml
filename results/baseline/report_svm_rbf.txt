@@ -1,0 +1,32 @@
+===== test =====
+                 precision    recall  f1-score   support
+
+      bluetooth       0.88      0.96      0.92      2250
+    jam_barrage       0.81      0.55      0.66      2250
+     jam_pulsed       0.84      0.62      0.71      2250
+      jam_sweep       0.91      0.68      0.77      2250
+       jam_tone       0.90      0.79      0.84      2250
+          noise       0.98      1.00      0.99      2250
+wifi_congestion       0.63      0.82      0.72      2250
+      wifi_dsss       0.81      0.97      0.88      2250
+      wifi_ofdm       0.64      0.88      0.74      2250
+
+       accuracy                           0.81     20250
+      macro avg       0.82      0.81      0.80     20250
+   weighted avg       0.82      0.81      0.80     20250
+
+===== test_real =====
+                 precision    recall  f1-score   support
+
+      bluetooth       1.00      0.90      0.95       273
+    jam_barrage       0.00      0.00      0.00         0
+     jam_pulsed       0.00      0.00      0.00         0
+      jam_sweep       0.00      0.00      0.00         0
+       jam_tone       0.00      0.00      0.00         0
+wifi_congestion       0.00      0.00      0.00         0
+      wifi_dsss       0.98      0.55      0.71       197
+      wifi_ofdm       1.00      0.69      0.82       110
+
+       accuracy                           0.74       580
+      macro avg       0.37      0.27      0.31       580
+   weighted avg       0.99      0.74      0.84       580

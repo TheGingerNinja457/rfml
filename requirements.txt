@@ -1,0 +1,19 @@
+# Python 3.12 (tested on 3.12.10, Windows 11)
+numpy==2.5.3
+scipy==1.18.1
+h5py==3.16.0
+pandas==3.0.6
+matplotlib==3.11.2
+scikit-learn==1.9.1
+xgboost==3.4.1
+tqdm==4.70.1
+
+# PyTorch with CUDA 12.8 (GPU). Install this one separately, from the PyTorch index:
+#   pip install torch==2.11.0 --index-url https://download.pytorch.org/whl/cu128
+# For CPU only (slow training): pip install torch==2.11.0
+# torch==2.11.0
+
+# Optional: only needed for live SDR capture with sdr_classify.py
+# (also requires libiio v0.25 installed on the system)
+# pylibiio==0.25
+# pyadi-iio==0.0.21

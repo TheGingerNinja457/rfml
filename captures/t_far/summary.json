@@ -1,0 +1,36 @@
+{
+ "capture": "captures\\t_far.npz",
+ "meta": {
+  "fs": 20000000.0,
+  "freq": 2437000000.0,
+  "gain": 40.0,
+  "buffer": 1048576,
+  "uri": "usb:2.3.5",
+  "time": "2026-10-07 20:52:57",
+  "note": "SDR 1-2 m from laptop"
+ },
+ "floor_method": "receiver equalised from floor.npz; level auto; background is +7.5 dB vs antenna-off floor",
+ "floor_power": 39.27015875121725,
+ "windows": 19456,
+ "threshold": 0.6,
+ "counts": {
+  "noise": 309,
+  "wifi_ofdm": 259,
+  "wifi_dsss": 1127,
+  "bluetooth": 59,
+  "jam_tone": 239,
+  "jam_barrage": 2628,
+  "jam_sweep": 34,
+  "jam_pulsed": 5537,
+  "wifi_congestion": 383,
+  "uncertain": 8881
+ },
+ "groups": {
+  "clean": 309,
+  "wifi": 1386,
+  "bluetooth": 59,
+  "jamming": 8438,
+  "interference": 383,
+  "uncertain": 8881
+ }
+}

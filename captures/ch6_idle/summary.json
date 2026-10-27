@@ -1,0 +1,36 @@
+{
+ "capture": "captures\\ch6_idle.npz",
+ "meta": {
+  "fs": 20000000.0,
+  "freq": 2437000000.0,
+  "gain": 40.0,
+  "buffer": 1048576,
+  "uri": "usb:1.1.5",
+  "time": "2026-10-07 20:28:11",
+  "note": "antenna on, normal use"
+ },
+ "floor_method": "reference capture floor.npz",
+ "floor_power": 6.949707678832528,
+ "windows": 58368,
+ "threshold": 0.6,
+ "counts": {
+  "noise": 0,
+  "wifi_ofdm": 9,
+  "wifi_dsss": 0,
+  "bluetooth": 0,
+  "jam_tone": 595,
+  "jam_barrage": 37714,
+  "jam_sweep": 51,
+  "jam_pulsed": 1211,
+  "wifi_congestion": 723,
+  "uncertain": 18065
+ },
+ "groups": {
+  "clean": 0,
+  "wifi": 9,
+  "bluetooth": 0,
+  "jamming": 39571,
+  "interference": 723,
+  "uncertain": 18065
+ }
+}
