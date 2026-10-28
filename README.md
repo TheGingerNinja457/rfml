@@ -93,6 +93,29 @@ python sdr_classify.py classify captures\ch6_idle.npz --floor-ref captures\floor
 
 The project SDR appeared to have a receiver fault, so the captures in `captures/` are not representative of classifier performance.
 
+## Edge node and base station (`edge_node/`)
+
+The `edge_node/` folder contains the system the classifier is designed for: a Raspberry Pi 5 with an AD9363 (Pluto-compatible) SDR sweeps the 2.4 GHz, 5.8 GHz and 915 MHz bands, bins each spectrum, and streams it with u-blox MAX-M8Q GNSS fixes over a ~17 kbit/s SiK 915 MHz telemetry link to a laptop base station, which displays live spectra and logs position-tagged sweeps for an RSSI heat map.
+
+| Runs on | Files |
+|---|---|
+| Pi | `sdr_tx.py`, `sdr_scan.py`, `bands.py`, `linkmux.py`, `max_m8q_gps.py` |
+| Laptop | `base_rx.py` |
+| Both | `rssi_wire.py`, `aux_channels.py`, `gnss_source.py`, `siklink.py` |
+| Testing (no hardware needed) | `selftest.py`, `vlink.py`, `fake_gnss.py` |
+| Link throughput tests | `sik_tx.py`, `sik_rx.py` |
+| Link utilities | `sik_send.py`, `sik_recv.py`, `example_api.py` |
+
+Full setup, wiring and usage are in `edge_node/README_RSSI.md` and `edge_node/README_siklink.md`. Quick test with no hardware:
+
+```bash
+cd edge_node
+pip install -r requirements-laptop.txt
+python selftest.py
+```
+
+The edge node was built and bench-tested but not mounted on the UAV or flown during the project.
+
 ## Regulatory note
 
 No jamming signals were transmitted. All jamming classes are synthetic, and the SDR is used in receive-only mode. Operating radio jammer equipment in New Zealand is prohibited without a licence.

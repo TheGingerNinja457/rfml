@@ -1,0 +1,7 @@
+# Raspberry Pi 5 (runs sdr_tx.py / sdr_scan.py)
+#   pip install -r requirements-pi.txt     (inside the venv, see README_RSSI.md)
+# Also needs from apt:  libiio-utils python3-libiio python3-venv
+numpy
+pyserial
+pyadi-iio          # pulls in pylibiio; needs libiio0 from apt
+matplotlib         # only for selftest.py --live, or running base_rx.py on the Pi

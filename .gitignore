@@ -14,3 +14,8 @@ results_v1/
 
 # Report drafts
 *.docx
+
+# Edge node: never commit survey logs (they can contain GPS positions)
+edge_node/*.csv
+edge_node/**/*.csv
+*.log

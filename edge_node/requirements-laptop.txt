@@ -1,0 +1,6 @@
+# Laptop / base station (runs base_rx.py)
+#   py -m pip install -r requirements-laptop.txt      (Windows)
+#   pip install -r requirements-laptop.txt            (Linux / macOS)
+numpy
+matplotlib
+pyserial
